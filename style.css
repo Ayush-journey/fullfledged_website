@@ -1,0 +1,689 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* css written for header portion. */
+.header {
+    height:120px;
+    display:flex;
+    align-items: center;
+    z-index: 4;
+    background-color: white;
+    width:100%;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+}
+
+
+.logo{
+    float:left; 
+    margin-left:20%;
+}
+
+.logo img{
+    height:100px;
+    width:120px;
+}
+
+.nav{
+  width:70%;
+  float: left;
+  margin-left:5%;
+}
+
+.nav ul {
+    display:flex;
+    width:80%;
+    text-align:center;
+}
+
+.nav ul li{
+    list-style-type: none;
+    margin-left: 2%;
+    width:auto;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:rgb(77, 74, 74);
+    font-size: 17px;
+}
+
+.nav ul li a:hover{
+    color:rgb(236, 22, 122);
+}
+
+.btn{   
+float:left;
+width:20%;
+position:relative;
+right:300px;
+}
+
+.login_btn {
+    width:45%;
+    height:50px;
+    border: 2px solid rgb(236, 22, 122);
+    border-radius:10px;
+    color:rgb(236, 22, 122);
+    background-color: white;
+    font-size: 20px;
+    margin-right:2%;
+}
+
+.login_btn:hover{
+    background-color: rgb(236, 22, 122);;
+    color: white;
+    cursor: pointer;
+}
+
+.ss_btn {
+    width:45%;
+    height:50px;
+    border: 2px solid rgb(236, 22, 122);
+    border-radius:10px;
+    color:white;
+    background-color: white;
+    font-size: 20px;
+    padding: 0 5px;
+    background-color: rgb(236, 22, 122);
+    cursor: pointer;
+}
+
+.ss_btn:hover{
+    background-color: white;
+    color:rgb(236, 22, 122);;
+}
+
+/*middle section css*/
+
+.content-container{
+    height:450px;
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:50px;
+}
+
+.content{
+    margin: 0 0 50px 20%;
+    width:970px;
+    
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content span{
+    color:rgb(236, 22, 122);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.content p{
+    margin: 20px 0 20px 0;
+    font-size:18px;
+    letter-spacing: 3px;;
+}
+
+.content input{
+    width:480px;
+    height:60px;
+    padding:10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.content button{
+    width:135px;
+    height:60px;
+    border: 2px solid rgb(236, 22, 122);
+    color:white;
+    background-color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: rgb(236, 22, 122);
+    margin-left:0;
+    border-radius: 0 5px 5px 0;
+    position:relative;
+    left:-37px;
+    z-index: 2;
+}
+
+.content button:hover{
+    cursor: pointer;
+}
+
+/*Card Content*/
+
+.number-content{
+    width: 70%;
+    display:flex;
+    margin: 40px 20%;
+}
+.card{
+    background-color: rgb(243, 241, 241);
+    width:22%;
+    border-radius:10px;
+    padding:20px;
+    height:250px;
+    margin: 0 10px;
+}
+
+.card h1{
+    color: rgb(236, 22, 122);
+    font-size: 50px;
+}
+
+.card p{
+    font-size: 25px;
+    margin-top:18px;
+    font-weight: bold;
+}
+
+/*Why Love Meesho section*/
+.why-love{
+    display:flex;
+    width:70%;
+    margin-left:20%;
+    margin-top:90px;
+}
+
+.content1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:35%;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.content2{
+    width:48%;
+    border: 2px solid rgb(146, 194, 241,0.7);
+    padding:30px;
+    border-radius:10px;
+    position: relative;
+    left:150px;
+    font-size:large;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    z-index: 2;
+    box-shadow: 0 0 15px 0 rgb(77, 74, 74);
+}
+
+.content2 h1{
+    padding-bottom: 15px;
+}
+
+div .card1{
+    margin-bottom: 20px;
+}
+
+.card1 p{
+    margin-bottom: 15px;
+}
+
+.hr{
+    border-bottom: 2px solid rgba(196, 223, 250, 0.7);
+}
+
+/*reward container*/
+.reward-container{
+    background-color: rgba(215, 231, 247, 0.7);
+    height:40%;
+    width:100%;
+    margin-top:150px;
+}
+
+.content3{
+    width:30%;
+    float:left;
+    margin-left:20%;
+    margin-top:30px;
+    font-size: 20px;
+}
+
+.card4-container{
+    display:grid;
+    grid-gap:10px 30px;
+    width:30%;
+    height:100%;
+    grid-template-columns: 2fr 2fr;
+    margin-left:3%;
+}
+
+.card4{
+    background-color: rgb(248, 226, 246);
+    padding:15px;
+    border-radius: 15px;
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 15px 0 rgb(190, 188, 188);
+}
+
+.card4 h1{
+    font-size:22px;
+}
+
+.card4 p{
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.pos1{
+    position:relative;
+    top:-30px;
+}
+
+.pos2{
+    position:relative;
+    bottom:-30px;
+}
+
+.video-container{
+    margin:auto;
+    width:60%;
+    margin-top:100px;
+
+}
+
+.video-container > h1{
+    margin-top:10px;
+    text-align:center;
+    margin-bottom:15px;
+    border-radius:15px;
+}
+
+.video-card{
+    display:flex;
+    justify-content: center;
+}
+
+
+.nme {
+    width:350px;
+    height:500px;
+    margin:20px;
+}
+
+.nme:hover{
+    box-shadow: 0 0 0 15px rgb(243, 241, 241);
+}
+
+
+.nme .btn{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color: rgb(236, 22, 122);;
+    color:white;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    border:3px solid white;
+}
+
+.image-container23{
+    position:relative;
+
+}
+
+.image-container23 img{
+    height:200px;
+    width:100%;
+    margin-bottom:30px;
+}
+
+.image-container23 button{
+    position:absolute;
+    top:75%;
+    right:70%;
+   
+}
+ 
+.content21 .central{
+    margin-bottom:15px;
+    margin-top:10px;
+}
+
+.content23{
+    text-align: justify;
+}
+
+.content21{
+    margin:15px;
+}
+
+.content21 p {
+    font-size:20px;
+    line-height:30px;
+}
+
+.procedure{
+    height:500px;
+    margin-top:150px;
+}
+.procedure >h1{
+    text-align: center;
+    margin-bottom:40px;
+   
+}
+.account{
+    background-color: rgb(243, 241, 241);
+    width:70%;
+    height:70%;
+    margin:auto;
+    border-radius: 10px;
+    position:relative;
+}
+.symbls{
+    display:flex;
+    position:absolute;
+    left:2%;
+    top:10%;
+}
+.symbls .btn1{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: rgb(236, 22, 122);
+    color:white;
+    font-size:17px;
+    border:none;
+}
+
+.symbls .line{
+    width:258px;
+    height:1px;
+    background-color: rgb(236, 22, 122);
+    margin:15px;
+}
+
+.content46{
+    /* display:flex;
+    margin-left:20px;
+    height:100%; */
+    position:relative;
+    top:20%;
+    left:1%;
+}
+
+.content46 h1{
+    font-size:22px;
+}
+.content46 p{
+    font-size: 20px;
+    margin-top:10px;
+    line-height:30px;
+}
+
+.list1{
+    width:15%;
+    position:absolute;
+    margin-top:20px;
+}
+
+.list1 ul{
+    margin-left:20px;
+}
+
+.list1 li{
+    color:red;
+    list-style-type: disc;
+    font-size:large;
+}
+
+.list1 li span{
+    color:black;
+}
+
+.content46 .item1{
+    
+    left:2%;
+}
+
+.content46 .item2{
+    left:22%;
+}
+
+.content46 .item3{
+    right:44%;
+}
+
+.content46 .item4{
+    right:24%;
+}
+
+.content46 .item5{
+    right:4%;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 5; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+.login-container{
+    width:30%;
+    height:400px;
+    margin:auto;
+    background-color: white;
+    border-radius:15px;
+    margin-top:140px;
+    position:relative;
+}
+
+.inner-container{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    margin:auto;
+}
+.inner-container .heading{
+    text-align:center;
+    margin-top:25px;
+    margin-bottom:25px;
+    font-size:25px;
+}
+
+.login-container .input{
+    height:30px;
+    border-radius: 10px;
+    margin-bottom:30px;
+    padding:15px;
+    height:5%;
+    font-size:22px;
+}
+
+.inner-container a{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.inner-container button{
+   padding:10px;
+   border-radius: 10px;
+   color: rgb(236, 22, 122);
+   font-size:22px;
+   cursor:pointer;
+}
+
+.inner-container button:hover{
+    background-color: rgb(236, 22, 122);
+    color:white;
+}
+
+.close{
+    border-radius:50%;
+    background-color: rgb(236, 22, 122);
+    color:white;
+    font-size:25px;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:-18px;
+    right:-15px;
+    border:none;
+}
+.close:hover{
+    border:3px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.msg{
+    display:none;
+    position: fixed; 
+    z-index: 5; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.login-container {
+    width:30%;
+    height:400px;
+    margin:auto;
+    background-color: white;
+    border-radius:15px;
+    margin-top:140px;
+    position:relative;
+}
+
+.login-container p{
+    font-size:40px;
+    text-align:center;
+    position:relative;
+    top:180px;
+}
+
+.logo23{
+    display:flex;
+    align-items: center;
+    margin-bottom:22px;
+}
+
+.sellgrow{
+    margin-left:20%;
+    width:20%;
+    
+    position:relative;
+    top:40px;
+    
+}
+
+.vertical_line{
+    height:60px;
+    background-color:rgb(236, 22, 122);
+    width:3px;
+    margin:10px;
+}
+
+.learninghub{
+    background-color: rgb(243, 241, 241);
+    height:300px;
+    width:100%;
+    margin-top:50px;
+    display:flex;
+}
+
+.logo23 img{
+    width:140px;
+    height:70px;
+}
+.content75{
+    font-size:22px;
+}
+
+.video-image{
+    border: 2px solid rgb(236, 22, 122);
+    border-radius:5px;
+    width:13%;
+    height:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:30%;
+    left:20%;
+    color:rgb(236, 22, 122);
+    font-size:22px;
+    cursor:pointer;
+}
+
+.video-image:hover{
+    background-color: rgb(236, 22, 122);
+    color:white;
+    }
+
+.video-image .btn45{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color: rgb(236, 22, 122);
+    color:white;
+    font-size:30px;
+    border:4px solid white;
+    margin-right:2.5%;
+}
+
+.card4-container .card41{
+    background-color: white;
+    padding:15px;
+    border-radius: 15px;
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 15px 0 rgb(190, 188, 188);
+}
+
+
+.collapsible-container{
+    background-color: antiquewhite;
+    margin-top:300px;
+    margin-bottom:300px;
+}
+
+.content90{
+    width:60%;
+    border:2px solid red;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.content90 li{
+    padding:30px;
+    list-style-type: none;
+    font-size: 22px;
+    overflow:hidden;
+}
+
+.content90 li a{
+    text-decoration: none;
+}
